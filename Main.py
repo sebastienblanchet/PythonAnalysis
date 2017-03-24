@@ -9,7 +9,6 @@ from matplotlib.ticker import LinearLocator, FormatStrFormatter
 '''
 Note: all calculations to be completed in US customary
 Sebastien Blanchet
-03/09/2017
 '''
 
 # Define all parameters
@@ -32,7 +31,7 @@ t_step = 1/16
 
 # Length Calculation for Drum Length
 len_vect = abs(D_max-D_min)+1
-D = np.linspace(D_min, D_max, num=(len_vect))
+D = np.linspace(D_min, D_max, num=len_vect)
 
 # Create vector of from [t_min, t_max] (must add t_step arrange does NOT include final)
 t = np.arange(t_min, t_max+t_step, t_step)
@@ -81,43 +80,6 @@ for i in range(numrows):
             Valid_longshell[i][j] = 1
 
 
-# # Displacement Case 28-1c
-# DelR_c = (q*(R**2)/E_y)*(1-v/2)
-# # Displacement Case 28-8
-# y_a8 = -1/(2*Dm*lmb**3)
-# phi_a8 = 1/(2*Dm*lmb**2)
-# # Displacement Case 28-10
-# y_a10 = 1/(2*Dm*lmb**2)
-# phi_a10 = -1/(Dm*lmb)
-# # Reaction momment and shear
-# M_o = (((-phi_a8*y_a10/y_a8)+phi_a10)**-1)*((phi_a8*DelR_c)/y_a8)
-# V_o = (DelR_c/-y_a8)+(y_a10*M_o/-y_a8)
-# # Stress Calculations Case 28-1c
-# Sig_1c = q*R/2
-# Sig_2c = q*R
-# # Stress Calculations Case 28-10
-# Sig_28 = -2*V_o*lmb*R
-# # Stress Calculations Case 28-10
-# Sig_110pr = 6*M_o
-# Sig_210 = 2*M_o*(lmb**2)*R
-# Sig_210pr = v*Sig_110pr
-# # Final stress calc
-# Sm_Sig1 = Sig_1c+Sig_110pr
-
-
-# # Intialize loop values
-# max_itnum = 5
-# itnum = []
-# tol = 10  #10% convergence error
-# err = []
-# Iterative loop
-# for i in range(max_itnum):
-#     itnum[i] = i
-#
-#     # err[i] = max((abs(new-old)/old)*100)
-#     if err[i] <= tol:
-#         break
-
 # Plot 1 mass vs D vs t
 fig = plt.figure()
 ax = fig.gca(projection='3d')
@@ -131,6 +93,7 @@ plt.title('3D plot')
 # Add a color bar which maps values to colors.
 fig.colorbar(surf, shrink=0.5, aspect=5)
 plt.show()
+
 
 # Convergence plot
 # plt.figure(2)
