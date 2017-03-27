@@ -1,15 +1,15 @@
+'''
+Sebastien Blanchet, Altaeros Energies, Systems Engineering Intern
+March 27 2017
+
+Note: all calculations to be completed in US customary
+'''
+
 # Import plotting modules
 import numpy as np
-import matplotlib.ticker as ticker
-from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.pyplot as plt
 from matplotlib import cm
-from matplotlib.ticker import LinearLocator, FormatStrFormatter
-
-'''
-Note: all calculations to be completed in US customary
-Sebastien Blanchet
-'''
+from matplotlib.ticker
 
 # Define all parameters
 d_tether = 15.2/25.4        # tether diameter 15.2mm to in
@@ -60,25 +60,21 @@ Dm = (E_y*(t_y**3))/(12*(1-v**2))
 longshell = lmb*l
 TWPV = R/t_y
 
+#Vector Prop
 numrows = len(D_x)
 numcols = len(D_x[0])
-
 shapeofD = np.shape(D_x)
 
 Valid_DT = np.zeros(shapeofD)
 Valid_longshell = np.zeros(shapeofD)
 
+# Loop to check for assumptions
 for i in range(numrows):
-
     for j in range(numcols):
-
-        # Loop to check for assumptions
         if TWPV[i][j] >= 10:
             Valid_DT[i][j] = 1
-
         if longshell[i][j] >= 6:
             Valid_longshell[i][j] = 1
-
 
 # Plot 1 mass vs D vs t
 fig = plt.figure()
@@ -93,8 +89,3 @@ plt.title('3D plot')
 # Add a color bar which maps values to colors.
 fig.colorbar(surf, shrink=0.5, aspect=5)
 plt.show()
-
-
-# Convergence plot
-# plt.figure(2)
-# plt.plot(itnum, err, label='')
