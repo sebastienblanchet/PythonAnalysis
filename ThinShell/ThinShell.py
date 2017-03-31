@@ -17,24 +17,43 @@ v = 0.3                     # poissons ratio [ul]
 rho = 0.284                 # density of steel [lb/in^3]
 SG = 1.01                   # spool gap 1% [ul]
 D = 28                      # OD 28 in drum for thin shell
+t = 0.75
 # Prelim calcs
 Sig_allow = S_y / SF
+R = D/2
 l = np.ceil((SG * d_tether * L_tether) / (np.pi * (2 * D + 3 * d_tether)))
 
-Bx = np.arange(0, 11, 0.1)
+FlexRig = (E_y*t**3)/(12*(1-v**3))
+Beta = ((3*(1-v**2))/((R**t)**2))**0.25
 
+x_crit = 6/Beta
+
+if x_crit <= l:
+    print('Long shell assumption is VALID')
+else:
+    print('Long shell assumption is INVALID')
+
+x_step = 0.25
+x = np.arange(0, l + x_step, x_step)
+
+
+# Bx = np.arange(0, 11, 0.1)
+Bx = Beta*x
 Phi_Bx = (np.exp(-Bx))*(np.cos(Bx)+np.sin(Bx))
 Psi_Bx = (np.exp(-Bx))*(np.cos(Bx)-np.sin(Bx))
 Theta_Bx = (np.exp(-Bx))*(np.cos(Bx))
 Zeta_Bx = (np.exp(-Bx))*(np.sin(Bx))
 
+# plot bending functions
 plt.figure(1)
 # to write math text must use r'$\greekletter text$'
-plt.plot(Bx, Phi_Bx, label=r'$\phi ( \beta x)$')
+plt.plot(Bx, Phi_Bx, label=r'$\varphi ( \beta x)$')
 plt.plot(Bx, Psi_Bx, label=r'$\psi ( \beta x)$')
 plt.plot(Bx, Theta_Bx, label=r'$\theta ( \beta x)$')
 plt.plot(Bx, Zeta_Bx, label=r'$\zeta ( \beta x)$')
 plt.xlabel(r'$\beta x$')
-plt.ylabel('Bending fxn')
+plt.ylabel(r'$f( \beta x)$')
+plt.title('Displacement ' r'$w$' ' variation with ' r'$\beta x$')
 plt.legend()
+plt.savefig('Figures\w_fxns.png')
 plt.show()
