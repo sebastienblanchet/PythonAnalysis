@@ -1,3 +1,7 @@
+# Sebastien Blanchet 
+# Altaeros Energies, Systems Intern
+# March 29 2017
+
 # Import plotting modules
 import matplotlib.pyplot as plt
 import numpy as np

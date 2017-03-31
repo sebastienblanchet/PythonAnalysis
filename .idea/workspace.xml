@@ -18,12 +18,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/March/Unif Dist Load/Main.py">
+      <file leaf-file-name="3DPlot.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SimpleStress/3DPlot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+            <state relative-caret-position="356">
+              <caret line="46" column="22" lean-forward="false" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="22" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ThinShell.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ThinShell/ThinShell.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="466">
+              <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+              <folding>
+                <element signature="e#186#204#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -53,6 +65,11 @@
         <option value="$PROJECT_DIR$/March/Linearly Decreasing Load/LinDec.py" />
         <option value="$PROJECT_DIR$/March/Linearly Decreasing Load/Main.py" />
         <option value="$PROJECT_DIR$/March/Unif Dist Load/Main.py" />
+        <option value="$PROJECT_DIR$/March/FourierSolution/ThinShellFourierSolution.py" />
+        <option value="$PROJECT_DIR$/March/Capstan/Capstan.py" />
+        <option value="$PROJECT_DIR$/March/Lin Inc Load/Main.py" />
+        <option value="$PROJECT_DIR$/SimpleStress/3DPlot.py" />
+        <option value="$PROJECT_DIR$/ThinShell/ThinShell.py" />
       </list>
     </option>
   </component>
@@ -89,12 +106,18 @@
               <option name="myItemId" value="PythonAnalysis" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="March" />
+              <option name="myItemId" value="PythonAnalysis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PythonAnalysis" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Unif Dist Load" />
+              <option name="myItemId" value="ThinShell" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -108,28 +131,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="March" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonAnalysis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonAnalysis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Feb" />
+              <option name="myItemId" value="SimpleStress" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -142,7 +151,41 @@
       <recent name="C:\Users\sebastien.blanchet\Documents\WKRPT400\GitHub\PythonAnalysis" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Main">
+  <component name="RunManager" selected="Python.ThinShell">
+    <configuration default="false" name="ThinShellFourierSolution (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/March/FourierSolution" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="PythonAnalysis" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/March/FourierSolution/ThinShellFourierSolution.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Main (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/March/Lin Inc Load" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="PythonAnalysis" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/March/Lin Inc Load/Main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
     <configuration default="false" name="ThinShellFourierSolution" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -150,80 +193,46 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/FourierSolution" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="PythonAnalysis" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ThinShellFourierSolution.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FourierSolution/ThinShellFourierSolution.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="LinDec" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="3DPlot" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SimpleStress" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="PythonAnalysis" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LinDec.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SimpleStress/3DPlot.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="LinDec (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="ThinShell" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/March/Linearly Decreasing Load" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ThinShell" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="PythonAnalysis" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/March/Linearly Decreasing Load/LinDec.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/March/Linearly Decreasing Load" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="PythonAnalysis" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/March/Linearly Decreasing Load/Main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/March/Unif Dist Load" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="PythonAnalysis" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/March/Unif Dist Load/Main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ThinShell/ThinShell.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -363,19 +372,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.ThinShellFourierSolution" />
-      <item index="1" class="java.lang.String" itemvalue="Python.LinDec" />
-      <item index="2" class="java.lang.String" itemvalue="Python.LinDec (1)" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Main (1)" />
-      <item index="4" class="java.lang.String" itemvalue="Python.Main" />
+      <item index="0" class="java.lang.String" itemvalue="Python.ThinShellFourierSolution (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Python.Main (2)" />
+      <item index="2" class="java.lang.String" itemvalue="Python.ThinShellFourierSolution" />
+      <item index="3" class="java.lang.String" itemvalue="Python.3DPlot" />
+      <item index="4" class="java.lang.String" itemvalue="Python.ThinShell" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Main" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Main (1)" />
-        <item index="2" class="java.lang.String" itemvalue="Python.LinDec (1)" />
-        <item index="3" class="java.lang.String" itemvalue="Python.LinDec" />
-        <item index="4" class="java.lang.String" itemvalue="Python.ThinShellFourierSolution" />
+        <item index="0" class="java.lang.String" itemvalue="Python.ThinShell" />
+        <item index="1" class="java.lang.String" itemvalue="Python.3DPlot" />
+        <item index="2" class="java.lang.String" itemvalue="Python.ThinShellFourierSolution" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Main (2)" />
+        <item index="4" class="java.lang.String" itemvalue="Python.ThinShellFourierSolution (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -402,22 +411,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.102212854" sideWeight="0.49361023" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1264489" sideWeight="0.49361023" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.49789253" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3954984" sideWeight="0.50421494" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.3290461" sideWeight="0.49578503" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.102212854" sideWeight="0.5063898" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3954984" sideWeight="0.49578503" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3954984" sideWeight="0.49578503" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="92" y="92" width="1736" height="866" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -474,9 +484,9 @@
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/March/Unif Dist Load/Main.py</url>
+          <url>file://$PROJECT_DIR$/March/Lin Inc Load/Main.py</url>
           <line>49</line>
-          <option name="timeStamp" value="24" />
+          <option name="timeStamp" value="40" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -486,7 +496,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="25" />
+      <option name="time" value="47" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -495,22 +505,29 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/March/Linearly Decreasing Load/Main.py">
+    <entry file="file://$PROJECT_DIR$/SimpleStress/3DPlot.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#152#170#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/March/Linearly Decreasing Load/Main.py">
+    <entry file="file://$PROJECT_DIR$/FourierSolution/ThinShellFourierSolution.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="484">
+          <caret line="27" column="18" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/March/FourierSolution/ThinShellFourierSolution.py" />
+    <entry file="file://$PROJECT_DIR$/March/FourierSolution/ThinShellFourierSolution.py" />
+    <entry file="file://$PROJECT_DIR$/March/FourierSolution/ThinShellFourierSolution.py" />
+    <entry file="file://$PROJECT_DIR$/March/FourierSolution/ThinShellFourierSolution.py" />
+    <entry file="file://$PROJECT_DIR$/March/Linearly Decreasing Load/Main.py" />
+    <entry file="file://$PROJECT_DIR$/March/Linearly Decreasing Load/Main.py" />
     <entry file="file://$PROJECT_DIR$/March/ThinShellFourierSolution.py" />
     <entry file="file://$PROJECT_DIR$/LinDec.py" />
     <entry file="file://$PROJECT_DIR$/ThinShellFourierSolution.py" />
@@ -533,26 +550,65 @@
     <entry file="file://$PROJECT_DIR$/March/ThinShellFourierSolution.py" />
     <entry file="file://$PROJECT_DIR$/March/Linearly Decreasing Load/LinDec.py" />
     <entry file="file://$PROJECT_DIR$/March/Linearly Decreasing Load/3DPlot.py" />
-    <entry file="file://$PROJECT_DIR$/March/FourierSolution/ThinShellFourierSolution.py">
+    <entry file="file://$PROJECT_DIR$/March/Linearly Decreasing Load/Main.py" />
+    <entry file="file://$PROJECT_DIR$/March/Unif Dist Load/Main.py" />
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-660">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="30">
+          <caret line="1601" column="0" lean-forward="true" selection-start-line="1601" selection-start-column="0" selection-end-line="1601" selection-end-column="0" />
+          <caret line="1600" column="0" lean-forward="true" selection-start-line="1600" selection-start-column="0" selection-end-line="1600" selection-end-column="0" />
+          <caret line="1599" column="0" lean-forward="true" selection-start-line="1599" selection-start-column="0" selection-end-line="1599" selection-end-column="0" />
+          <caret line="1598" column="47" lean-forward="true" selection-start-line="1598" selection-start-column="47" selection-end-line="1598" selection-end-column="47" />
+          <caret line="1597" column="29" lean-forward="true" selection-start-line="1597" selection-start-column="29" selection-end-line="1597" selection-end-column="29" />
+          <caret line="1596" column="0" lean-forward="true" selection-start-line="1596" selection-start-column="0" selection-end-line="1596" selection-end-column="0" />
+          <caret line="1595" column="68" lean-forward="true" selection-start-line="1595" selection-start-column="68" selection-end-line="1595" selection-end-column="68" />
+          <caret line="1594" column="0" lean-forward="true" selection-start-line="1594" selection-start-column="0" selection-end-line="1594" selection-end-column="0" />
+          <caret line="1593" column="83" lean-forward="false" selection-start-line="1593" selection-start-column="83" selection-end-line="1593" selection-end-column="83" />
+          <caret line="1592" column="0" lean-forward="true" selection-start-line="1592" selection-start-column="0" selection-end-line="1592" selection-end-column="0" />
+          <caret line="1591" column="23" lean-forward="true" selection-start-line="1591" selection-start-column="23" selection-end-line="1591" selection-end-column="23" />
+          <caret line="1590" column="33" lean-forward="true" selection-start-line="1590" selection-start-column="33" selection-end-line="1590" selection-end-column="33" />
+          <caret line="1589" column="76" lean-forward="true" selection-start-line="1589" selection-start-column="76" selection-end-line="1589" selection-end-column="76" />
+          <caret line="1588" column="15" lean-forward="true" selection-start-line="1588" selection-start-column="15" selection-end-line="1588" selection-end-column="15" />
+          <caret line="1587" column="40" lean-forward="true" selection-start-line="1587" selection-start-column="40" selection-end-line="1587" selection-end-column="40" />
+          <caret line="1586" column="12" lean-forward="true" selection-start-line="1586" selection-start-column="12" selection-end-line="1586" selection-end-column="12" />
+          <caret line="1585" column="0" lean-forward="true" selection-start-line="1585" selection-start-column="0" selection-end-line="1585" selection-end-column="0" />
+          <caret line="1584" column="37" lean-forward="true" selection-start-line="1584" selection-start-column="37" selection-end-line="1584" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/March/Linearly Decreasing Load/Main.py">
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+        <state relative-caret-position="374">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/March/Capstan/Main.py" />
+    <entry file="file://$PROJECT_DIR$/March/Capstan/Capstan.py" />
+    <entry file="file://$PROJECT_DIR$/March/FourierSolution/ThinShellFourierSolution.py" />
+    <entry file="file://$PROJECT_DIR$/March/Lin Inc Load/Main.py" />
+    <entry file="file://$PROJECT_DIR$/FourierSolution/ThinShellFourierSolution.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="27" column="18" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimpleStress/3DPlot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="46" column="22" lean-forward="false" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/March/Unif Dist Load/Main.py">
+    <entry file="file://$PROJECT_DIR$/ThinShell/ThinShell.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="466">
+          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding>
+            <element signature="e#186#204#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
