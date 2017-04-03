@@ -27,7 +27,7 @@ FlexRig = (E_y*t**3)/(12*(1-v**3))
 Beta = ((3*(1-v**2))/((R**t)**2))**0.25
 
 x_step = 0.125
-x = np.arange(0, l + x_step, x_step)
+x = np.arange(0, l/2 + x_step, x_step)
 
 Bx = Beta*x
 Phi_Bx = (np.exp(-Bx))*(np.cos(Bx)+np.sin(Bx))
@@ -35,28 +35,26 @@ Psi_Bx = (np.exp(-Bx))*(np.cos(Bx)-np.sin(Bx))
 Theta_Bx = (np.exp(-Bx))*(np.cos(Bx))
 Zeta_Bx = (np.exp(-Bx))*(np.sin(Bx))
 
-# Find where beta is approx equal to zero
-results = np.where(abs(Phi_Bx) <= 0.001)
-Beta_zero = results[0][0]
+# Results for P applied at center
+w_x = (P/(8*(Beta**3)*FlexRig))*Phi_Bx
+M_x = (P/(4*Beta))*Psi_Bx
+Q_x = (P/2)*Theta_Bx
 
-# Calculate critical length and check if assumption is valid
-x_crit = Bx[Beta_zero]/Beta
-if x_crit <= l/2:
-    print('Long shell assumption is VALID')
-else:
-    print('Long shell assumption is INVALID')
-
-# # plot bending functions
-plt.figure(1)
-# to write math text must use r'$\greekletter text$'
-plt.plot(Bx, Phi_Bx, label=r'$\varphi ( \beta x)$')
-plt.plot(Bx, Psi_Bx, label=r'$\psi ( \beta x)$')
-plt.plot(Bx, Theta_Bx, label=r'$\theta ( \beta x)$')
-plt.plot(Bx, Zeta_Bx, label=r'$\zeta ( \beta x)$')
-plt.xlabel(r'$\beta x$')
-plt.ylabel(r'$f( \beta x)$')
-plt.xlim([0,Bx[Beta_zero]])
-plt.title('Displacement ' r'$w$' ' variation with ' r'$\beta x$')
-plt.legend()
-plt.savefig('Figures\w_fxns.png')
+plt.close('all')
+# Two subplots, the axes array is 1-d
+f, axarr = plt.subplots(3, sharex=True)
+# Plot w(x)
+axarr[0].plot(x, w_x)
+axarr[0].set_title('Deflection, Moment, Shear Distribution')
+axarr[0].set_ylabel(r'$w(x)\ [in]$')
+# Plot M(x)
+axarr[1].plot(x, M_x)
+axarr[1].set_ylabel(r'$M(x)\ [lbs\cdot in]$')
+# Plot Q(x)
+axarr[2].plot(x, Q_x)
+axarr[2].set_ylabel(r'$Q(x)\ [lbs]$')
+axarr[2].set_xlabel(r'$x\ [in]$')
+axarr[2].set_xlim([0, l/4])
+# Save fige and show
+plt.savefig('Figures\wMQ_vs_x.png')
 plt.show()
